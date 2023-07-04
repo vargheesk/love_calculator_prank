@@ -1,0 +1,79 @@
+#container {
+    margin: none;
+    max-width: device-width;
+    padding: 4px;
+    background-color: #fe016e;
+    
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+.disclaimer {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+/*                   circular chart style                    */
+.single-chart {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.circular-chart {
+  display: inline-block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke:#505960;
+  stroke-width: 3.;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+  100% {
+    stroke-dasharray: var(--percentage) 100;
+  }
+}
+span.emoji {
+    font-size: 6em; /* Change the number as per your preference */
+    }
+
+.circular-chart.blue .circle {
+  stroke: #ff046c;
+}
+
+.percentage {
+  fill: #ff046c;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+/* submitting the data  */
+#submit-btn {
+    display: none;
+}

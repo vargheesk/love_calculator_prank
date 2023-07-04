@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="shorcut icon" type="x-icon" href="page-icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Love Calculater</title>
+       <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Love Calculater  &#x1F60D;</h1>
+    </div>
+	<div  class =" notifications "></div >
+    <div style="padding: 75px;">
+        <table>
+            <form id="myForm" action="file0.html" method="get" onsubmit="return validateForm();">
+                <tr>
+                    <h4>&#x1F44B;Your Name</h4>
+                </tr>
+                <tr>
+                    <input type="text" name="person_name" id="person_name" placeholder="name">
+                </tr>
+                <tr>
+                    <br><br>
+                </tr>
+                <tr>
+                    <h4> &#x1F970;Crush's name</h4>
+                </tr>
+                <tr>
+                    <input type="text" name="crush_name" id="crush_name" placeholder="crush's name">
+                </tr>
+                <tr>
+                    <input type="submit" id="calculate-btn" value="Calculate &#x1F448;" class="button">
+                </tr>
+            </form>
+        </table>
+        <div id="popup" class="popup"></div>
+    </div>
+    <p class="disclaimer">This is a fun project, the results are used from scientific algorithm. <b>But Don't Totally Trust On It</b></p>
+    <script src="index.js"></script>
+</body>
+</html>
